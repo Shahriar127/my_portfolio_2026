@@ -43,7 +43,7 @@ const Navbar = () => {
     <>
       <nav
         className={
-          darkMode
+           darkMode
             ? "bg-white border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
             : "bg-gray-700 border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
         }

@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
@@ -8,9 +7,43 @@ import { Link } from "react-scroll";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
 
+const ROLE_SEQUENCE = ["Full Stack Developer", "Java Spring Boot", "PHP Laravel"];
+
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [typedText, setTypedText] = useState(ROLE_SEQUENCE[0]);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = ROLE_SEQUENCE[roleIndex];
+    const typingSpeed = isDeleting ? 50 : 100;
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          const nextText = currentRole.slice(0, typedText.length + 1);
+          setTypedText(nextText);
+
+          if (nextText === currentRole) {
+            setTimeout(() => setIsDeleting(true), 900);
+          }
+        } else {
+          const nextText = currentRole.slice(0, typedText.length - 1);
+          setTypedText(nextText);
+
+          if (nextText === "") {
+            setIsDeleting(false);
+            setRoleIndex((prev) => (prev + 1) % ROLE_SEQUENCE.length);
+          }
+        }
+      },
+      typedText === currentRole && !isDeleting ? 900 : typingSpeed
+    );
+
+    return () => clearTimeout(timeout);
+  }, [typedText, isDeleting, roleIndex]);
+
   return (
     <>
       <div
@@ -32,17 +65,8 @@ const Home = () => {
                 Hi, I am Shahriar
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
-                    "Full Stack Developer",
-                    1000,
-                    "Java Spring Boot",
-                    1000,
-                    "PHP Laravel",
-                    1000,
-                  ]}
-                  loop={Infinity}
-                />
+                {typedText}
+                <span className="animate-pulse">|</span>
               </span>
             </h1>
             <p
