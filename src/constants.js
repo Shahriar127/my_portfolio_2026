@@ -136,6 +136,33 @@ export const projectData = {
 
 
 
+export const certificationData = [
+  {
+    title: "Certification 1",
+    description: "Professional certification demonstrating expertise and commitment to the field.",
+    image: require("./assets/Screenshot From 2026-04-07 19-50-12.png"),
+    stack: "Verified"
+  },
+  {
+    title: "Certification 2",
+    description: "Advanced certification showcasing specialized skills and knowledge.",
+    image: require("./assets/Screenshot From 2026-04-07 19-50-21.png"),
+    stack: "Verified"
+  },
+  {
+    title: "Certification 3",
+    description: "Expert-level certification in advanced technical domains.",
+    image: require("./assets/Screenshot From 2026-04-07 19-52-52.png"),
+    stack: "Verified"
+  },
+  {
+    title: "Certification 4",
+    description: "Comprehensive certification recognizing mastery in key technical areas.",
+    image: require("./assets/Screenshot From 2026-04-07 19-53-05.png"),
+    stack: "Verified"
+  }
+]
+
 export const serviceData = [
  {
   name: 'Spring Boot Development',
