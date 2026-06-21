@@ -138,28 +138,76 @@ export const projectData = {
 
 export const certificationData = [
   {
-    title: "Certification 1",
-    description: "Professional certification demonstrating expertise and commitment to the field.",
-    image: require("./assets/Screenshot From 2026-04-07 19-50-12.png"),
-    stack: "Verified"
+    title: "Mobile App Development",
+    description: "Completed the Mobile Application Development training under the EDGE (Skills Development) project by the ICT Division & Bangladesh Computer Council (BCC), Government of Bangladesh.",
+    image: require("./assets/cert-mobile-app-dev.png"),
+    stack: "ICT Division · EDGE"
   },
   {
-    title: "Certification 2",
-    description: "Advanced certification showcasing specialized skills and knowledge.",
-    image: require("./assets/Screenshot From 2026-04-07 19-50-21.png"),
-    stack: "Verified"
+    title: "The AI Engineer Path",
+    description: "Comprehensive 11.4-hour, 257-lesson career path on Scrimba covering the full AI engineering workflow — from fundamentals to production-ready agents.",
+    image: require("./assets/cert-ai-engineer-path.png"),
+    stack: "Scrimba"
   },
   {
-    title: "Certification 3",
-    description: "Expert-level certification in advanced technical domains.",
-    image: require("./assets/Screenshot From 2026-04-07 19-52-52.png"),
-    stack: "Verified"
+    title: "Intro to AI Engineering",
+    description: "Foundational course on building AI-powered applications, prompt design, and integrating large language models into real products.",
+    image: require("./assets/cert-intro-ai-engineering.png"),
+    stack: "Scrimba"
   },
   {
-    title: "Certification 4",
-    description: "Comprehensive certification recognizing mastery in key technical areas.",
-    image: require("./assets/Screenshot From 2026-04-07 19-53-05.png"),
-    stack: "Verified"
+    title: "Learn RAG",
+    description: "Hands-on course on Retrieval-Augmented Generation — embeddings, vector search, and grounding LLM responses in custom data.",
+    image: require("./assets/cert-learn-rag.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "Learn AI Agents",
+    description: "Building autonomous AI agents with tool use, reasoning loops, and multi-step task execution.",
+    image: require("./assets/cert-learn-ai-agents.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "Learn Context Engineering",
+    description: "Techniques for designing, structuring, and optimizing context windows to get reliable, high-quality LLM outputs.",
+    image: require("./assets/cert-context-engineering.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "Build a Support Agent with Vercel AI SDK",
+    description: "Project-based course on building a production support agent using the Vercel AI SDK with streaming and tool integration.",
+    image: require("./assets/cert-support-agent-vercel.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "Learn JavaScript",
+    description: "In-depth 9.4-hour, 238-lesson course covering modern JavaScript fundamentals, the DOM, and interactive web development.",
+    image: require("./assets/cert-learn-javascript.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "Learn Tailwind CSS",
+    description: "Practical course on building responsive, utility-first user interfaces with Tailwind CSS.",
+    image: require("./assets/cert-learn-tailwind.png"),
+    stack: "Scrimba"
+  },
+  {
+    title: "SQL (Intermediate)",
+    description: "HackerRank skill certification validating intermediate proficiency in SQL queries, joins, and data manipulation.",
+    image: require("./assets/cert-sql-intermediate.png"),
+    stack: "HackerRank"
+  },
+  {
+    title: "SQL (Basic)",
+    description: "HackerRank skill certification validating core SQL competency in querying and managing relational data.",
+    image: require("./assets/cert-sql-basic.png"),
+    stack: "HackerRank"
+  },
+  {
+    title: "Infinity AI BuildFest 2026",
+    description: "Certificate of Participation for the Preliminary Round of The Infinity AI BuildFest 2026, hosted by CloudCamp Bangladesh & BRAC University — building AI-powered solutions with real-world impact.",
+    image: require("./assets/cert-infinity-ai-buildfest.png"),
+    stack: "CloudCamp · BRAC University"
   }
 ]
 

@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
+import logo from "../assets/logo.jpg";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -64,9 +65,11 @@ const Navbar = () => {
               aria-label="Shahriar logo"
             >
               <span className="inline-flex items-center gap-2">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white shadow-md">
-                  SJ
-                </span>
+                <img
+                  src={logo}
+                  alt="Shahriar Jubair"
+                  className="h-10 w-10 rounded-full object-cover shadow-md ring-2 ring-blue-500/40"
+                />
                 <span className="text-xl font-semibold tracking-wide">
                   Shahriar
                 </span>
